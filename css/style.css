@@ -663,6 +663,8 @@ color: #FFFFFF;
   margin-left: auto;
 }
 
+
+
 .subscribe-form {
   display:flex;
   align-items: center;
@@ -682,6 +684,8 @@ color: #FFFFFF;
 }
 
 .input-subscribe {
+  display: flex;
+
   min-width: 358px;
   height: 50px;
   background-color: var(--hero-footer-background);
@@ -694,9 +698,15 @@ color: #FFFFFF;
   font-size: 16px;
   line-height: calc(20/16);
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-color);
+  
 }
 
+.input-subscribe:hover,
+.input-subscribe:focus{
+border-color: var(--second-color);
+
+}
 .button-subscribe {
   display: flex;
   min-width: 200px;
@@ -1044,6 +1054,8 @@ fill: var(--hover-color);
 
 .icon-policy{
   fill: transparent;
+  width: 100%;
+  height: 100%;
 }
 
 .checkbox input:checked + .checkbox-label .icon-wrapper{
@@ -1069,6 +1081,7 @@ fill: var(--hover-color);
 
 .checkbox-label-link{
 margin-left: 5px;
+color: var(--hover-color);
 }
 
 .button-form {
